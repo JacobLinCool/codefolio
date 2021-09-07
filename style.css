@@ -81,7 +81,8 @@ body {
     transition: transform 0.4s ease-out, opacity 0.6s cubic-bezier(0, 0, 0.4, 1), box-shadow 0.3s cubic-bezier(0, 0, 0.4, 1);
 }
 
-.code:hover {
+.code:hover,
+.code:active {
     z-index: 9999;
     box-shadow: #2e344099 0 0 0 300vmax;
 }
@@ -120,7 +121,7 @@ pre.shiki {
     height: 0vmin;
     opacity: 1;
 
-    animation: rotate 16s linear infinite;
+    animation: rotate 16s linear infinite, colors 32s steps(8) infinite;
     transition: all 0.5s, opacity 5s 5s;
 }
 
@@ -144,8 +145,10 @@ pre.shiki {
     height: 10vmin;
 }
 
-#background:hover::before,
-#background:hover::after {
+/* #background:hover::before,
+#background:hover::after, */
+#background:active::before,
+#background:active::after {
     width: 14vmin;
     height: 14vmin;
     animation-duration: 0.3s;
@@ -159,5 +162,14 @@ pre.shiki {
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes colors {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
     }
 }
