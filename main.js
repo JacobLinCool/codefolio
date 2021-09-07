@@ -11,6 +11,7 @@ async function init() {
     const text = `const JacobLinCool = require("JacobLinCool")`;
     const console = document.querySelector("#console");
     const input = console.querySelector("span");
+    const background = document.querySelector("#background");
 
     await sleep(1000);
     await type(input, text, 50, 30);
@@ -36,8 +37,14 @@ async function init() {
     await sleep(500);
     input.style.transform = "rotate(0deg)";
     await sleep(400);
-    console.style.background = "#eceff4";
+    console.style.background = "#eceff400";
     console.style.color = "#2e3440";
+
+    (async () => {
+        background.classList.add("active2");
+        await sleep(500);
+        background.classList.add("active1");
+    })();
 
     document.querySelector("#about").innerHTML = await shikiAbout;
     document.querySelector("#about").style.display = "block";
