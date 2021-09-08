@@ -106,7 +106,7 @@ async function getAboutCode(highlighter) {
         `// basics.js
 JacobLinCool.name = "林振可"
 JacobLinCool.birth = [2003, null, null]
-JacobLinCool.aliases = ["JacobLinCool", "Jacob Lin"]
+JacobLinCool.aliases = ["JacobLinCool", "Jacob Lin", "JacobLinIsCool", "JacobLinIsVeryVeryCool", "精靈", "小妖精", "振可你又在耍可愛了", "振可每次都不知道在幹嘛都笑笑的"]
 JacobLinCool.hometown = "台北市"
 JacobLinCool.living = [
     {
