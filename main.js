@@ -192,8 +192,8 @@ JacobLinCool.skill = [
         type: "programming_language",
     },
     {
-        name: "Visual Basic 6",
-        level: "almost_forgotten",
+        name: "Go",
+        level: "basics",
         type: "programming_language",
     },
     {
@@ -202,8 +202,8 @@ JacobLinCool.skill = [
         type: "programming_language",
     },
     {
-        name: "Go",
-        level: "learning",
+        name: "Visual Basic 6",
+        level: "almost_forgotten",
         type: "programming_language",
     },
     {
